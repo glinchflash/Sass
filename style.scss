@@ -1,15 +1,15 @@
 @use "sass:math";
-
+/* mixin */
 @mixin shadow {
   box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
   -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
   -moz-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
 }
-
+/* padding variable */
 $padding: 16px;
 
 
-
+/* body */
 body {
   font: 100% "Space Mono", monospace;
   color: #2748B3;
@@ -21,9 +21,12 @@ body {
   background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
   background-attachment: fixed
 }
+/* nesting */
 article {
   display: flex;
   flex-wrap: wrap;
+  /* section nesting*/
+
   section {
     flex-grow: 1;
     flex-basis: 45%;
@@ -35,10 +38,13 @@ article {
     overflow: auto;
     box-sizing: border-box;
   }
+  /* selling points in section nesting*/
+
   section#selling-points {
     flex-grow: 2;
     flex-basis: 100%;
   }
+  /* nesting code in section */
   code {
     background: #000;
     border: 1px solid #ddd;
@@ -84,7 +90,7 @@ h6 {
 }
 
 
-
+/* extend */
 %message-shared {
   border: 1px solid #ccc;
   padding: 10px;
