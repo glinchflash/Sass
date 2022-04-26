@@ -24,9 +24,6 @@ body {
 article {
   display: flex;
   flex-wrap: wrap;
-}
-
-article {
   section {
     flex-grow: 1;
     flex-basis: 45%;
@@ -38,16 +35,10 @@ article {
     overflow: auto;
     box-sizing: border-box;
   }
-}
-
-article{
-  #selling-points {
+  section#selling-points {
     flex-grow: 2;
     flex-basis: 100%;
   }
-}
-
-article{
   code {
     background: #000;
     border: 1px solid #ddd;
@@ -74,6 +65,8 @@ article{
     width: 40%
   }
 }
+
+
 
 h1, h2, h6 {
   color: #6B8EFF
