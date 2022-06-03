@@ -5,6 +5,7 @@
   -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
   -moz-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
 }
+
 /* padding variable */
 $padding: 16px;
 
@@ -21,6 +22,7 @@ body {
   background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
   background-attachment: fixed
 }
+
 /* nesting */
 article {
   display: flex;
@@ -38,12 +40,14 @@ article {
     overflow: auto;
     box-sizing: border-box;
   }
+
   /* selling points in section nesting*/
 
   section#selling-points {
     flex-grow: 2;
     flex-basis: 100%;
   }
+
   /* nesting code in section */
   code {
     background: #000;
@@ -73,7 +77,6 @@ article {
 }
 
 
-
 h1, h2, h6 {
   color: #6B8EFF
 }
@@ -99,6 +102,7 @@ h6 {
   width: 100%
 
 }
+
 /* extended message-shared*/
 .message {
   @extend %message-shared;
